@@ -85,11 +85,10 @@ function displayPost(postId) {
     .then((response) => response.json())
     .then((data) => {
         console.log(data)
-        userPost = data;
         let singlePost = document.getElementById("post-layout");
         let html = "";
             html += `
-                <div class="mt-5">
+                <div class="mt-3 mb-5 w-75">
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="d-flex justify-content-end text-danger">
